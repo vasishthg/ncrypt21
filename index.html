@@ -20,4 +20,11 @@
       <img src="images/image 3.png" style="padding-left: 3.5em; max-width: 14em; padding-top: 10em;">
 </body>
 </html>
-<script src="main.js"></script>
+<script src="service-worker.js"></script>
+<script>
+    window.addEventListener("load", () => {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+});
+</script>
