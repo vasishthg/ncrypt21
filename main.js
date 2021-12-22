@@ -2,7 +2,7 @@ const OFFLINE_VERSION = 1;
 // console.log("i am sw")
 const CACHE_NAME = "offline";
 // Customize this with a different URL if needed.
-const OFFLINE_URL = "/offline.html";
+const OFFLINE_URL = "offline.html";
 
 self.addEventListener("install", (event) => {
     event.waitUntil(
