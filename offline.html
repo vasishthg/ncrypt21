@@ -1,1 +1,26 @@
-Offline lol
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>You are offline | nCrypt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="images/nlogo.png" rel="icon">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<body>
+    <img src="/images/image 3.png" style="position: absolute;top: 1em;max-width: 10em;">
+    
+      <h1 style=" text-align: center;font-family: 'Poppins', sans-serif; color: white; margin-top: 9.4em;font-weight: 200; font-size: 2em; ">You are Offline<br>Try connecting to the internet</h1>
+    <br><div class="newrectlol" style="margin-left: 38.5em;"><br><a href="index.html" style="text-decoration:none; color: white; text-align: center; padding-left: 7.7em;font-family: 'Poppins',sans-serif;">Reload</a></div>    
+</body>
+</html>
+<script src="service-worker.js"></script>
+<script>
+    window.addEventListener("load", () => {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+});
+</script>

@@ -21,6 +21,27 @@ a:visited{
 ::-webkit-scrollbar-thumb {
   background: none;
 }
+.recttry{
+  position: absolute;
+width: 400px;
+height:575px;
+display: block;
+
+
+background: #1C1C1C;
+border: 5px solid #1C1C1C;
+box-sizing: border-box;
+border-radius: 47px;
+}
+.newrectlol{
+  position: absolute;
+width: 306px;
+height: 59px;
+margin-left: 2.5em;
+
+background: #ff0000ab;
+border-radius: 20px;
+}
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
