@@ -1,0 +1,72 @@
+body{
+    background-color: #111111;
+   
+}
+::-webkit-scrollbar {
+  width: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: none;
+}
+.sidenav {
+    height: 100%;
+    width: 65px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #161616;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 6px 6px 18px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+
+    
+  }
+  
+
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .sidenavbtns:hover{
+    animation: lmao 0.6s 1;
+    animation-fill-mode: forwards;
+  }
+  @keyframes lmao{
+      0%{
+          filter:invert(0%);
+      }
+      100%{
+          filter: invert(100%);
+      }
+  }
+ 
