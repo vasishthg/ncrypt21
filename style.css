@@ -198,3 +198,20 @@ a:visited{
   margin: auto;
   max-width: 80%;
 }
+.col-69{
+  position: absolute;
+width: 625px;
+height: 100px;
+margin-top: 10em;
+background: #1C1C1C;
+border-radius: 50px;
+}
+.sheesh{
+  position: absolute;
+width: 4px;
+height: 49px;
+left: 20em;
+top: 1.5em;
+background: #424242;
+border-radius: 5px;
+}
