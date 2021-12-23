@@ -1,14 +1,28 @@
+html,body
+{
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+}
 body{
     background-color: #111111;
-   
+    padding: 0;
+margin: 0;
+font-family: 'Poppins', sans-serif;
+
 }
 ::-webkit-scrollbar {
-  width: none;
+  width: 8px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
-  background: none;
+  box-shadow: inset 0 10px 150px #111;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e10000;
+  border-radius: 4px;
 }
 a{
   text-decoration: none;
@@ -16,64 +30,137 @@ a{
 a:visited{
   text-decoration: none;
 }
+.tagline{
+  height: 100vh;
+    line-height: 100vh;
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: none;
+    width: fit-content;
 }
-.recttry{
-  position: absolute;
-width: 400px;
-height:575px;
-display: block;
+.tagline h1{
 
-
-background: #1C1C1C;
-border: 5px solid #1C1C1C;
-box-sizing: border-box;
-border-radius: 47px;
+    color: white;
+    /* margin-top: 9.4em; */
+    padding-left: 2.5em;
+    font-weight: 300;
+    font-size: 2em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    margin-bottom: 0;
 }
-.newrectlol{
-  position: absolute;
-width: 306px;
-height: 59px;
-margin-left: 2.5em;
+.links {
+  display:inline;
+  float:right;
 
-background: #ff0000ab;
-border-radius: 20px;
+}
+.links a {
+  font-size:1em;
+  padding: 1em;
+  line-height: 4.2em;
+  color: white;
+  font-weight: 300;
+
+}
+.heading{
+  margin-top: 2em;
+  text-align:center;
+  color: white;
+  font-weight: 200;
+}
+.heading hr{
+
+  border: red 1px solid;
+  margin: auto;
+  margin-top: 0.25em;
+  width: 3em;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: none;
+.regbtn{
+  float: right;
+      color: white;
+      background: red;
+      border: none;
+      border-radius: 10px;
+      padding: 0.5em 1em;
+      margin: 10px;
+      font-size: 1em;
+}
+.navbarr{
+  background: black;
+  position: fixed;
+  max-width: 100%;
+  width: 100%;
+  padding-right: 1em;
+  z-index: 999;
+}
+#contact{
+  position: relative;
+}
+.contactgrid{
+  background: #1c1c1c;
+  border-radius: 25px;
+  
+  z-index: 888;
+}
+.contactgrid a img{
+  max-width: 1.4em;
+
+  margin-bottom: 1.5em;
+}
+.contactgrid h3{
+  padding-left: 1em;
+  padding-top: 1em;
+
+  color: white;
+  display: inline-block;
+}
+
+.titlebtns{
+  color: white;
+    background: red;
+    border: none;
+    border-radius: 10px;
+    padding: 0.75em 3.5em;
+    /* margin: 10px; */
+    font-weight: 200;
+    margin-top: 2em;
+    font-size: 0.45em;
+}
+
+
+.logo{
+  max-width: 10em;
+  margin-top: 0.5em;
+  margin-left: 1em;
 }
 .sidenav {
     height: 100%;
+
     width: 65px;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     left: 0;
     background-color: #161616;
     overflow-x: hidden;
     padding-top: 20px;
   }
-  
+
   .sidenav a {
     padding: 6px 6px 6px 18px;
     text-decoration: none;
     font-size: 25px;
     display: block;
   }
-  
+
   .sidenav a:hover {
     color: #f1f1f1;
 
-    
-  }
-  
 
-  
+  }
+
+
+
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -90,4 +177,24 @@ border-radius: 20px;
           filter: invert(100%);
       }
   }
- 
+.aboutcontent{
+  margin-top: 2em;
+  font-size: 1.3em;
+}
+.card{
+  background: #1c1c1c;
+  margin: 1em 0.5em;
+  border-radius: 1em;
+}
+.card h3{
+  color:white;
+  margin-top: 0.5em;
+  font-size: 2em;
+
+}
+.teamimg{
+  border-radius: 125px;
+  text-align: center;
+  margin: auto;
+  max-width: 80%;
+}
