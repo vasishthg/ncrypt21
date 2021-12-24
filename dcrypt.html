@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dCrypt 21</title>
+    <link rel="stylesheet" href="dcrypt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/d.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="preloader"><h1 style="color: white;">d<span style="color: red;">Crypt</span></h1>
+        <div class="loader"></div>
+    </div>
+    <div class="maincontent">
+    <h1 style="color: red; padding-left: 0.4em;padding-top: 0.1em;">dCrypt
+        <span style="float: right; padding-right: 1em;">
+            <a><img src="images/dcrypt-light.png" style="max-width: 1.3em;" onclick="lightMode()"></a>
+
+            <a><img src="images/dcrypt-dark.png" style="max-width: 1.3em;" onclick="darkMode()"></a>
+        </span>
+    </h1>
+    <h1 id="mainquestion">
+        1. Hard question Lol
+    </h1>
+    <form onsubmit="return false;">
+    <input id="answerbox" autocomplete="off"  required placeholder="Type answer here.." >
+    <input type="submit" class="submitterlol" value="Check" onclick="answer()">
+    </form>
+    </div>
+</body>
+</html>
+<script src="dcrypt.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Squareboi';
+    src: url(heheboi.ttf);
+}
+body{
+    font-family: 'Squareboi';
+    background-color: #111111;
+    overflow: hidden;
+}
+.preloader{
+    font-size: 7em;
+    text-align: center;
+    animation: slideup 1s 1;
+    animation-fill-mode: forwards;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    margin:auto;
+    opacity: 1;
+    background: #111111;
+}
+@keyframes slideup{
+    0%{
+        
+        margin-top: 4em;
+    }
+    100%{
+        margin-top: 0em;
+        
+    }
+    
+}
+.loader {
+    border: 2px solid #ffffff; /* Light grey */
+    border-top: 2px solid #ff0000; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    left: 6.3em;
+    z-index: 1;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .maincontent{
+      z-index: 0;
+  }
+#mainquestion{
+    color: white;
+    text-align: center;
+    animation: updraftjettlol 2s 1;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes updraftjettlol{
+    0%{
+        margin-top: 10em;
+    }
+    100%{
+        margin-top: 2em;
+    }
+}
+#answerbox{
+    position: absolute;
+width: 800px;
+height: 150px;
+border: 18px solid #730404;
+box-sizing: border-box;
+border-radius: 38px;
+background: none;
+color: red;
+    font-size: 2em;
+font-family: 'Squareboi';
+text-align: center;
+left: 11.1em;
+top: 10em;
+animation:imaginefade 3s 1;
+
+
+
+}
+.answerbox::placeholder{
+    color: rgb(56, 56, 56);
+    text-align: center;
+    
+}
+.submitterlol{
+    position: absolute;
+    right: 13em;
+    bottom: 8em;
+    border: 0 none;
+    padding:5px 15px; 
+    background:rgb(255, 255, 255); 
+    cursor:pointer;
+    position: absolute;
+    width: 150px  ;
+    height: 70px;
+    font-family: 'Squareboi';
+    font-size: 1.5em;
+    background: #FFFFFF;
+    border-radius: 128px;
+    animation:imaginefade 5s 1;
+}
+@keyframes imaginefade{
+    0%{
+        filter: opacity(0);
+    }
+    100%{
+        filter: opacity(100);
+    }
+}
+.correct{
+    background: red;
+    color: white;
+    border-radius: 20px;
+    opacity: 0;
+}
+.incorrect{
+    background: red;
+    color: white;
+    border-radius: 20px;
+    opacity: 0;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    position: absolute;
+}
+
+
